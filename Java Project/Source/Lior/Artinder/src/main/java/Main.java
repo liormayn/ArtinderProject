@@ -5,7 +5,10 @@ import javax.swing.*;
  */
 public class Main {
 
+    public static String userConnected;
 public static void main (String[] args) throws Exception {
+
+
     // if not logged in
 
     String[] arr = new String[] {"C:\\Temp\\FinalProject\\artinder","C:\\Temp\\FinalProject\\Classify"};
@@ -16,7 +19,6 @@ public static void main (String[] args) throws Exception {
 
     DBConnection wk = new DBConnection();
 
-    wk.Connect();
     wk.GetAllArticles();
     if (wk.CanUserConnect("lior","lior"))
     {

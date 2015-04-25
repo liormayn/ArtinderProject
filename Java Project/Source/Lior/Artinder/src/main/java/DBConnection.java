@@ -14,6 +14,7 @@ public class DBConnection {
     private static Connection connection;
 
 
+
     public static void Connect() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
 
@@ -22,8 +23,12 @@ public class DBConnection {
         connection = DriverManager.getConnection(DB_URL, USER, PASS);
     }
 
-    public static List<Article> GetAllArticles() throws SQLException {
+    public static List<Article> GetAllArticles() throws SQLException, ClassNotFoundException {
 
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
     List<Article> articles = new ArrayList<>();
     Statement stmt = connection.createStatement();
     ResultSet rs = stmt.executeQuery("SELECT * FROM Articles");
@@ -38,7 +43,12 @@ public class DBConnection {
         return articles;
     }
 
-    public static List<User> GetAllUsers() throws SQLException {
+    public static List<User> GetAllUsers() throws SQLException, ClassNotFoundException {
+
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
 
         List<User> users = new ArrayList<>();
         Statement stmt = connection.createStatement();
@@ -54,7 +64,12 @@ public class DBConnection {
         return users;
     }
 
-    public static boolean DoesUserExist(String username) throws SQLException {
+    public static boolean DoesUserExist(String username) throws SQLException, ClassNotFoundException {
+
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
 
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM users where username = " + username);
@@ -66,7 +81,7 @@ public class DBConnection {
         return false;
     }
 
-    public static boolean CanUserConnect(String username,String password) throws SQLException {
+    public static boolean CanUserConnect(String username,String password) throws SQLException, ClassNotFoundException {
 
         User userToCheck = new User();
         userToCheck.password = password;
@@ -81,7 +96,12 @@ public class DBConnection {
         return false;
     }
 
-    public static List<Article> GetUserPositiveClassifications(String username) throws SQLException {
+    public static List<Article> GetUserPositiveClassifications(String username) throws SQLException, ClassNotFoundException {
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
+
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 1 ");
@@ -96,7 +116,12 @@ public class DBConnection {
         return articles;
     }
 
-    public static List<Article> GetUserNegativeClassifications(String username) throws SQLException {
+    public static List<Article> GetUserNegativeClassifications(String username) throws SQLException, ClassNotFoundException {
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
+
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 0 ");

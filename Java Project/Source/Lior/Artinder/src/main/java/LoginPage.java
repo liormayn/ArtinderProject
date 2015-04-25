@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 /**
  * Created by Lior on 08/04/2015.
@@ -30,18 +31,26 @@ public class LoginPage extends JFrame{
             if ((usernameField.getText().isEmpty()) || password.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Please insert your login credentials.");
             } else {
-                JOptionPane.showMessageDialog(null, "Welcome! " + usernameField.getText() + " With Password " + passwordField.getText());
                 //Check if user exists in db.
-                if (true)
-                {
-                    //yes? page of articles
-                    ArticleMainDisplay page = new ArticleMainDisplay();
-                }
-                else
-                {
-                    // no? message.
-                }
+                try {
+                    if (DBConnection.CanUserConnect(usernameField.getText().toString(),passwordField.getText().toString()))
+                    {
+                        //yes? page of articles
+                        ArticleMainDisplay page = new ArticleMainDisplay();
 
+                        Main.userConnected = usernameField.getText().toString();
+                        JOptionPane.showMessageDialog(null, "Connected " + Main.userConnected);
+
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null, "Connection failed! Please check your username and password");
+                    }
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                } catch (ClassNotFoundException e1) {
+                    e1.printStackTrace();
+                }
 
 
             }
