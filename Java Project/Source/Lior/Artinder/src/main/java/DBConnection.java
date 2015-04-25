@@ -23,6 +23,23 @@ public class DBConnection {
         connection = DriverManager.getConnection(DB_URL, USER, PASS);
     }
 
+
+    public static boolean RegisterUser(String username,String password) throws SQLException, ClassNotFoundException {
+        if (connection == null || connection.isClosed())
+        {
+            Connect();
+        }
+
+        if (!DoesUserExist(username)) {
+            Statement stmt = connection.createStatement();
+            int rs = stmt.executeUpdate(" INSERT INTO users (username,password)\n" +
+                    "        VALUES ('" + username + "','" + password + "');");
+
+            if (rs == 1) return true;
+        }
+        return false;
+    }
+
     public static List<Article> GetAllArticles() throws SQLException, ClassNotFoundException {
 
         if (connection == null || connection.isClosed())
@@ -72,7 +89,7 @@ public class DBConnection {
         }
 
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users where username = " + username);
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users where username = '" + username + "'");
 
         if (rs.next()) {
             return true;

@@ -19,6 +19,7 @@ public static void main (String[] args) throws Exception {
 
     DBConnection wk = new DBConnection();
 
+    wk.RegisterUser("hello","hello");
     wk.GetAllArticles();
     if (wk.CanUserConnect("lior","lior"))
     {
