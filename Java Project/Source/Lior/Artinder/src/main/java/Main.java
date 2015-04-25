@@ -18,6 +18,15 @@ public static void main (String[] args) throws Exception {
 
     wk.Connect();
     wk.GetAllArticles();
+    if (wk.CanUserConnect("lior","lior"))
+    {
+        System.out.println("connected");
+    }
+
+    if (wk.CanUserConnect("lior","sdfs"))
+    {
+        System.out.println("not conncted");
+    }
 
     if (true) {
         MainPage page = new MainPage();

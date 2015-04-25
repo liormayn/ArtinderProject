@@ -1,5 +1,7 @@
 //STEP 1. Import required packages
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBConnection {
     // JDBC driver name and database URL
@@ -20,38 +22,93 @@ public class DBConnection {
         connection = DriverManager.getConnection(DB_URL, USER, PASS);
     }
 
-    public static void GetAllArticles() throws SQLException {
+    public static List<Article> GetAllArticles() throws SQLException {
 
+    List<Article> articles = new ArrayList<>();
     Statement stmt = connection.createStatement();
-    ResultSet rs = stmt.executeQuery("SELECT * FROM Articels");
+    ResultSet rs = stmt.executeQuery("SELECT * FROM Articles");
 
         while (rs.next()) {
-            String lastName = rs.getString("Content");
-            System.out.println(lastName + "\n");
+            Article a = new Article();
+            a.id = rs.getInt("articleid");
+            a.text = rs.getString("Content");
+            articles.add(a);
         }
+
+        return articles;
     }
 
-    public static void GetAllUsers() throws SQLException {
+    public static List<User> GetAllUsers() throws SQLException {
 
+        List<User> users = new ArrayList<>();
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
         while (rs.next()) {
-            String lastName = rs.getString("Content");
-            System.out.println(lastName + "\n");
+            User a = new User();
+            a.username = rs.getString("username");
+            a.password = rs.getString("password");
+            users.add(a);
         }
+
+        return users;
     }
 
-    public static boolean DoesUserExist(String userid) throws SQLException {
+    public static boolean DoesUserExist(String username) throws SQLException {
 
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users where userid = " + userid);
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users where username = " + username);
 
         if (rs.next()) {
             return true;
         }
 
         return false;
+    }
+
+    public static boolean CanUserConnect(String username,String password) throws SQLException {
+
+        User userToCheck = new User();
+        userToCheck.password = password;
+        userToCheck.username = username;
+        List<User> users = GetAllUsers();
+        for (User item : users) {
+            if (item.password.equals(password) && item.username.equals(username))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static List<Article> GetUserPositiveClassifications(String username) throws SQLException {
+        List<Article> articles = new ArrayList<>();
+        Statement stmt = connection.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 1 ");
+
+        while (rs.next()) {
+            Article a = new Article();
+            a.id = rs.getInt("articleid");
+            a.text = rs.getString("Content");
+            articles.add(a);
+        }
+
+        return articles;
+    }
+
+    public static List<Article> GetUserNegativeClassifications(String username) throws SQLException {
+        List<Article> articles = new ArrayList<>();
+        Statement stmt = connection.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 0 ");
+
+        while (rs.next()) {
+            Article a = new Article();
+            a.id = rs.getInt("articleid");
+            a.text = rs.getString("Content");
+            articles.add(a);
+        }
+
+        return articles;
     }
 
 }//end JDBCExample
