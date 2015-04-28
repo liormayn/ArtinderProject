@@ -23,7 +23,7 @@ We miss it too, buddy. Fortunately, these things tend to grow back. But in the m
 
 
 We said it was a worthy cause, not a pretty one.   
-\n\n www.elle.com')
+\n\n www.elle.com');
 
 
 insert into articles (category,source,content) values ('Fashion','WWW.ELLE.COM','BRUCE JENNERS TRANSITION STORY MAKES "KEEPING UP WITH THE KARDASHIANS" WORTH IT
@@ -57,7 +57,7 @@ Trans rights activist and director of the National Center for Transgender Equali
 Perhaps the most eloquent words and sentiments came from multi-hypenate "genius" Kanye West when he explained why his wife Kim must offer Jenner her full support and love. According to Jenner, Kanye told Kim: "Look, I can be married to the most beautiful woman in the world, and I am. I can have the most beautiful little daughter in the world, and I have that. But Im nothing if I cant be me. If I cant be true to myself, they dont mean anything."
 
 Kim took those words to heart and in turn offered Jenner her first bit of woman-to-woman advice: "Girl, you gotta rock it, baby!"
-\n\n www.elle.com')
+\n\n www.elle.com');
 
 insert into articles (category,source,content) values ('Fashion','WWW.ELLE.COM','HOW TO PICK WINE NOT BASED ON THE PRETTY LABEL
 
@@ -100,7 +100,7 @@ STILL HAVE NO IDEA WHAT YOURE DOING? HERE ARE TURLEYS TOP 5 PICKS (YOURE WELCOME
 
 5) Ameztoi Rubentis 2014 Txakolina Rosé; $21 "Full of strawberry and watermelon juiciness, while remaining dry and fresh on the palate. A perfect springtime-in-the-park or summertime-by-the-beach wine."
 
-WWW.ELLE.COM')
+WWW.ELLE.COM');
 
 
 insert into articles (category,source,content) values ('Fashion','WWW.ELLE.COM','WHERE TO EAT, SHOP, AND STAY IN THE HAMPTONS
@@ -127,7 +127,7 @@ COLETTE
 STAY:
 Wölffers go-to is The Maidstone in East Hampton, where the Scandinavian- inflected decor tends toward brightly hued rugs and playful wallpaper. An added bonus: The hotel will prepare guests a picnic lunch they can take to the beach.
 
-www.elle.com')
+www.elle.com');
 
 
 insert into articles (category,source,content) values ('Fashion','WWW.ELLE.COM','BLAKE LIVELY MIGHT BE A LITTLE CONFUSED ABOUT WHAT ACTING IS
@@ -140,7 +140,7 @@ Lively prefers her other artistic endeavors (among them: running Preserve, build
 
 Ah. Who knew Gossip Girls Serena van der Woodsen was more of a Blair after all?
 
-www.elle.com')
+www.elle.com');
 
 
 insert into articles (category,source,content) values ('Food','WWW.VOGUE.COM','Ice Cream Hacks: 4 Healthy Frozen Recipes That Put Soft Serve to Shame
@@ -222,7 +222,7 @@ Ingredients:
 3. Pour directly onto your Freeze.
 4. To reuse, reheat in the microwave or on a stovetop.
 
-www.vogue.com')
+www.vogue.com');
 
 
 insert into articles (category,source,content) values ('Fashion','WWW.VOGUE.COM','Model Kat Hessen Wants to Empower Women, Not Just #FreeTheNipple
@@ -236,7 +236,7 @@ They recovered quickly and moved to the West Coast, bouncing around makeshift li
 
 That same electrifying obsession with independence is evident in her diamond-in-the-rough Instagram account @delikathessen; a sarcastic, comical array of social observations ranging from a woman using a selfie stick on a ledge that reads “Keep Off” and images of dolls that poke fun at the modeling industry to Hessen’s failures at freight train–jumping in Las Vegas. The one thing you won’t find on the social media outlet? A casting, test, or runway shot. “I think women, in general, we kind of just tell them that as long as you look pretty and upload loads of sexy pictures up on Instagram, the greatest cause of feminism is making sure that you can show your nipples on the Internet. Like, OK, that’s great, but do you know about women who can’t get an education or women who get circumcised when they are two years old? I don’t give a shit about your nipples: Spend your energy on something else. If that is your biggest problem, that you don’t feel liberated as a woman, then you are overprivileged, and you have too much time on your hands I think.” Plus, Hessen’s instagram is personal, she says, “That is the only part [of my life] that is public that I actually get to be myself, and it would be a shame to waste it by posting modeling pictures.” We have the feeling that she’ll be getting a lot more opportunities to be herself soon enough.
 
-www.vogue.com')
+www.vogue.com');
 
 insert into articles (category,source,content) values ('General','WWW.COSMOPOLITAN.COM','10 Things You Didnt Know Your iPhone Could Do
 
@@ -273,7 +273,7 @@ Dont want anyone to see when your significant other suddenly decides to send you
 10. Remind Yourself to Buy Toilet Paper
 The iPhone will allow you to create a geofence around a particular location, and send you a reminder whenever you pass through its virtual gates. For instance, a fence around your local grocery store can remind you to pick up some TP while you shop, or a fence at the office can be the nudge you need to remember to pass along that project file you keep forgetting. Set up a geofence by going into your phones Reminders app, create a reminder, and then tap the "i" beside it. Select "Remind me at a location" from the next page, and then add the address where youd like to receive a notification and whether youd like to get it as youre arriving at the place or as youre about to leave.
 
-www.cosmopolitan.com')
+www.cosmopolitan.com');
 
 
 insert into articles (category,source,content) values ('General','WWW.COSMOPOLITAN.COM','Now You Can Get Custom Perfume That Smells Like Your Dead Loved Ones
@@ -284,7 +284,7 @@ Katia Apalategui, a 52-year-old French insurance saleswoman, conjured up a new w
 
 Apalategui plans to launch the perfume company in September that will offer grieving families at funeral homes to opportunity to create their own sentimental fragrance for $600. Although the focus right now is on bottling the scent of the deceased, shes hoping to extend the service to those who want to capture the scent of their living loved ones in the future.
 
-www.cosmopolitan.com')
+www.cosmopolitan.com');
 
 
 
@@ -340,5 +340,5 @@ Every morning I follow the same routine: wake up, drink coffee, eat breakfast, s
 
 24. Wait ... IS IT RAINING?
 
-www.elle.com')
+www.elle.com');
 
