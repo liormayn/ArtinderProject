@@ -1,3 +1,4 @@
+﻿insert into articles (category,source,content) values ('General','http://www.everydayhealth.com','Your Diet, Your Health
 
 By Diana Rodriguez | Medically reviewed by Christine Wilmsen Craig, MD
 Nutrition is essential not only for life, but for a healthy life. Learn about the connection between what you eat and how you feel.
@@ -33,6 +34,7 @@ Another example is calcium, needed to keep bones strong and healthy, says Wolf. 
 
 Eating a well-rounded and varied diet will go a long way toward making sure you have all the nutrients you need. Remember that our body uses everything we put into it, and what we give it determines how its used — for good health, or for bad.
 
+http://www.everydayhealth.com');
 insert into articles (category,source,content) values ('General','http://www.nytimes.com','Home, Cooked
 
 For my parents, who immigrated from Hong Kong in the 1970s, leaving Chinatown was how you knew you had made it in America. They worked there for 20 years in the garment industry — so that I would never have to, they insisted — but every night they made their proud exit to the New Jersey suburbs. Meanwhile, at school, I was hiding my stinky lunches from my American friends and hoping they wouldnt hear our alien language.
@@ -48,6 +50,7 @@ Im normally tempted to drop in for one, but I was headed a block away, where a g
 
 As I ate condensed-­milk toast (as good as it sounds) and drank milk tea the texture of cream, I marveled at the d?cor. Simulated windows open onto an HDTV Hong Kong street scene; stare long enough, and you feel as if you can hop the bus to Kowloon. But it was after stepping back out onto Mott Street that I understood the significance of this place. Naming the restaurant Cha Chan Tang is like naming a coffee shop Coffee Shop; there used to be cha chaan tengs all over Chinatown, but this is something more. Its a Cantonese theme park, not a place to remind you of home as much as a place to remind you of where your parents used to call home. Everything has the familiarity of things you remember from vacation, but when I ordered, practicing the Cantonese in my head to make sure I had the sounds right, my server caught me off guard with totally unaccented English. He was born here, raised here. This is a new generation of Chinatown, one that doesnt mind staying.
 
+http://www.nytimes.com');
 insert into articles (category,source,content) values ('General','http://www.mayoclinic.org','Organic foods: Are they safer? More nutritious?
 
 Discover the real difference between organic foods and their traditionally grown counterparts when it comes to nutrition, safety and price.
@@ -83,6 +86,7 @@ Do organic and natural mean the same thing?
 
 No, "natural" and "organic" are not interchangeable terms. You may see "natural" and other terms such as "all natural," "free-range" or "hormone-free" on food labels. These descriptions must be truthful, but dont confuse them with the term "organic." Only foods that are grown and processed according to USDA organic standards can be labeled organic.
 
+http://www.mayoclinic.org');
 insert into articles (category,source,content) values ('General','https://www.yahoo.com','Dont throw away those chard stems! Photo: StockFood / Kevin Ilse
 
 The vegetable scraps you might normally toss in the garbage can make for a delicious meal when dressed up with the right…dressing.
@@ -105,6 +109,7 @@ Reinvent leftovers with these easy recipes
 
 Dan Barber makes the most of food waste
 
+https://www.yahoo.com');
 insert into articles (category,source,content) values ('General','https://www.yahoo.com','3 New French Toast Recipes to Try This Weekend
 
 When the weekend rolls around, theres nothing better than sleeping in, lazing, and having breakfast in your PJs. And while French toast has always been a mainstay of our brunch orders, we never really got the hang of cooking it at home — until now. Thanks to these amazing recipes, well be making French toast every weekend from now ‘til the end of the time. The best part? Theres an option for everyone.
@@ -153,6 +158,7 @@ Instructions
 
 5. Continue soaking and frying off the remaining slices.
 
+https://www.yahoo.com');
 insert into articles (category,source,content) values ('General','http://www.medicalnewstoday.com','New study shows how junk food diets prompt laziness
 
 Though most of us have experienced that lazy feeling after eating a large meal, researchers from California say their new study indicates that consistently eating processed foods and being overweight makes people tired and inactive, contrary to some beliefs maintaining laziness leads to obesity.
@@ -194,6 +200,7 @@ Carrying with it myriad health implications, obesity has been linked to heart di
 
 In other nutrition news, Medical News Today recently reported on a study that suggested consuming one serving of legumes each day can keep "bad cholesterol" at bay.
 
+http://www.medicalnewstoday.com');
 insert into articles (category,source,content) values ('General','http://www.theguardian.com','How to cook the perfect cheese grits
 
 Do you use grits, cornmeal or polenta; cook them in stock, milk or water; and add garlic, onion or chilli? Can grits ever be too cheesy – and are they best with bacon for breakfast or shrimp for supper?
@@ -239,6 +246,7 @@ Stir continuously until the grits have thickened to your desired consistency –
 
 Grits: one of those things you have to grow up with to truly appreciate, or polenta s humbler but hotter cousin? If you are a fan, how do you like them – plain in the morning or poshed up at night? And are there any British-grown grits lurking out there?
 
+http://www.theguardian.com');
 insert into articles (category,source,content) values ('General','http://www.theguardian.com','Cook up a a spring chicken feast with the trimmings
 
 Our culinary power duo – restaurateur Dimbleby and chef Baxter – return with this new column that celebrates cooking for groups and gatherings without fuss. To kick off: a mean chicken gratin with seasonal green trimmings ...
@@ -329,6 +337,7 @@ The day before
 - Remove gratin from oven
 - Pour wine
 
+http://www.theguardian.com');
 insert into articles (category,source,content) values ('General','http://www.sciencedaily.com','Five days of eating fatty foods can alter how your body s muscle processes food
 
 You might think that you can get away with eating fatty foods for a few days without it making any significant changes to your body.
@@ -351,6 +360,7 @@ To conduct the study, healthy college-age students were fed a fat-laden diet tha
 
 Hulver and the team are now interested in examining how these short-term changes in the muscle can adversely affect the body in the long run and how quickly these deleterious changes in the muscle can be reversed once someone returns to a low-fat diet.
 
+http://www.sciencedaily.com');
 insert into articles (category,source,content) values ('General','http://www.foodsafetynews.com','What is In Your Food? A Look at Food Fraud
 
 Olive oil, fish, honey, milk, and fruit juices are common, everyday foods found in most people s kitchens. However, these common foods may not contain the food ingredients you think.
@@ -410,3 +420,4 @@ On March 15, 2015, the U.S. government took a huge step toward decreasing the am
 
 This system is a step in the right direction toward combating food fraud. However, there is still a huge disconnect between food producers and consumers that has enabled rapid occurrences of food fraud. The best way for consumers to avoid food fraud is to connect to their local producers. Consumers should take the time to get to know local producers and visit the farms where their food is purported to be grown. Food fraud incidents will continue to occur until consumers start reconnecting to the land and the producers of our nation s food supply.
 
+http://www.foodsafetynews.com');

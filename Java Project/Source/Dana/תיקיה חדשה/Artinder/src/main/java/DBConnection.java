@@ -121,7 +121,7 @@ public class DBConnection {
 
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 1 ");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = '" + username + "' and Classification = 1 ");
 
         while (rs.next()) {
             Article a = new Article();
@@ -141,7 +141,7 @@ public class DBConnection {
 
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 0 ");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username '" + username + "' and Classification = 0 ");
 
         while (rs.next()) {
             Article a = new Article();
