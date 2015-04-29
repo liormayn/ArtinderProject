@@ -46,9 +46,9 @@ public class DBConnection {
         {
             Connect();
         }
-        List<Article> articles = new ArrayList<>();
-        Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles");
+    List<Article> articles = new ArrayList<>();
+    Statement stmt = connection.createStatement();
+    ResultSet rs = stmt.executeQuery("SELECT * FROM Articles");
 
         while (rs.next()) {
             Article a = new Article();
@@ -118,18 +118,16 @@ public class DBConnection {
         {
             Connect();
         }
-        List<Article> allArticles = GetAllArticles();
+
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM articleclassification WHERE username = '" + username + "' and Classification = 1 ");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 1 ");
 
         while (rs.next()) {
-            for (Article item : allArticles) {
-                if (item.id == rs.getInt("articleid"))
-                {
-                    articles.add(item);
-                }
-            }
+            Article a = new Article();
+            a.id = rs.getInt("articleid");
+            a.text = rs.getString("Content");
+            articles.add(a);
         }
 
         return articles;
@@ -140,18 +138,16 @@ public class DBConnection {
         {
             Connect();
         }
-        List<Article> allArticles = GetAllArticles();
+
         List<Article> articles = new ArrayList<>();
         Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM articleclassification WHERE username = '" + username + "' and Classification = 0 ");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM Articles WHERE username = " + username + "and Classification = 0 ");
 
         while (rs.next()) {
-            for (Article item : allArticles) {
-                if (item.id == rs.getInt("articleid"))
-                {
-                    articles.add(item);
-                }
-            }
+            Article a = new Article();
+            a.id = rs.getInt("articleid");
+            a.text = rs.getString("Content");
+            articles.add(a);
         }
 
         return articles;
