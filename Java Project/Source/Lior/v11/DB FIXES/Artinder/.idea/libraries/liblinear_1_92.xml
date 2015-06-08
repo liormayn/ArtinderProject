@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="liblinear-1.92">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/liblinear-weka-master (1)/liblinear-weka-master/lib/liblinear-1.92.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

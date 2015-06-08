@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Artinder">
+    <output-path>$PROJECT_DIR$/out/artifacts/Artinder</output-path>
+    <root id="archive" name="main.jar">
+      <element id="module-output" name="main" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/snowball-20051019.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Weka-3-6/weka.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Weka-3-6/weka-src.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Weka-3-6/wekaexamples.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Weka-3-6/remoteExperimentServer.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/liblinear-java-1.95.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
