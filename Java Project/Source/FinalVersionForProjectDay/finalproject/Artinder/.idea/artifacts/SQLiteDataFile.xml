@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="SQLiteDataFile">
+    <output-path>$PROJECT_DIR$/out/artifacts/Artinder</output-path>
+    <root id="root">
+      <element id="file-copy" path="$PROJECT_DIR$/artinder_data.sqlite" />
+    </root>
+  </artifact>
+</component>
